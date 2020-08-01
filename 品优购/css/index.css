@@ -1,0 +1,269 @@
+.main {
+	width: 980px;
+	height: 455px;
+	margin-left: 220px;
+	margin-top: 10px;
+}
+.focus {
+	float: left;
+	position: relative;
+	width: 721px;
+	height: 455px;
+	background-color: purple;
+}
+.focus ul li img {
+	width: 100%;
+	height: 100%;
+}
+.prev,
+.next {
+	position: absolute;
+	/* 垂直居中做法,两步 */
+	top: 50%;
+	margin-top: -30px;
+	/* 垂直居中做法,两步 结束*/
+	width: 28px;
+	height: 40px;
+	/* 透明度 */
+	background: rgba(0,0,0,.3);
+	text-align: center;
+	line-height: 40px;
+	color: #FFFFFF;
+	font-size: 25px;
+}
+/* 焦点左右和圆点列表  start*/
+.prev {
+	left: 0;
+}
+.next {
+	/* 如果一个盒子有left属性和right属性,默认执行从左到右
+	同理top与bottom（先上后下）*/
+	right: 0;
+}
+	.prev:hover,
+	.next:hover{
+	color: #00A4FF;
+}
+.promo-nav {
+	position: absolute;
+	bottom: 3px;
+	/* 水平居中做法,两步 */
+	left: 50px;
+	/* 水平居中做法,两步 结束*/
+/* 	width: 300px; */
+	height: 40px;
+	border-radius: 20px;
+}
+.promo-nav li {
+	float: left;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	margin: 8px;
+	border: 1px solid #8088a3;
+}
+.promo-nav .selected {
+	background-color: #ff5000;
+}
+.promo-nav li:hover {
+	background-color:#ff5000;
+} 
+/* 焦点左右和圆点列表  end*/
+.newflash {
+	float: right;
+	width: 250px;
+	height: 455px;
+	/* background-color: skyblue; */
+}
+.news {
+	height: 165px;
+	/* background-color: pink; */
+	border: 1px solid #e4e4e4;
+}
+.news-hd {
+	height: 33px;
+	border-bottom: 1px dotted #e4e4e4;
+	line-height: 33px;
+	padding: 0 15px;
+}
+.news-hd h5 {
+	float: left;
+	font-size: 14px;
+}
+.news-hd .more {
+	float: right;
+}
+.news-hd .more::after {
+	font-family: 'icomoon';
+	content: '\e914';
+}
+.news-bd {
+	padding: 5px 15px 0;
+}
+.news-bd ul li {
+	height: 24px;
+	line-height: 24px;
+	/*！！！！ 超出部分省略号显示 三步！！！！*/
+	/* 超出部分隐藏 */
+	overflow: hidden;
+	/* 必须一行显示 */
+	white-space: nowrap;
+	/* 超出部分省略号显示 */
+	text-overflow: ellipsis;
+}
+.lifeservice {
+	/* 加大ul后有超出部分,故溢出隐藏即可 */
+	overflow: hidden;
+	height: 209px;
+	/* background-color: purple; */
+	border: 1px solid #e4e4e4;
+	border-top: 0px;
+}
+.lifeservice ul {
+	width: 252px;
+}
+/* 超出,故在ul加大width */
+.lifeservice ul li {
+	position: relative;
+	float: left;
+	width: 63px;
+	height: 71px;
+	border-right: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	text-align: center;
+}
+.lifeservice ul li i {
+	display: inline-block;
+	width: 24px;
+	height: 28px;
+	background-color: pink;
+	margin-top: 12px;
+	background: url(../images/11.png) no-repeat ;
+}
+.jian {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 14px;
+	height: 18px;
+	line-height: 16px;
+	background-color: #5e9b60;
+	color: #fff;
+}
+.sanjiao {
+	position: absolute;
+	top: 13px;
+	right: 0;
+	height: 0;
+	width: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 5px solid #fff;
+}
+.bargain {
+	height: 76px;
+	margin-top: 5px;
+}
+.bargain img {
+	width: 100%;
+	height: 100%;
+}
+/* -----推荐模块制作----- */
+.recom {
+	height: 163px;
+	background-color: #ebebebe; 
+	margin-top: 12px;
+}
+.recom-hd {
+	float: left;
+	height: 163px;
+	width: 205px;
+}
+.recom-hd img {
+	width: 100%;
+	height: 100%;
+}
+.recom-bd {
+	float: left;
+}
+.recom-bd  ul li {
+	position: relative;
+	float: left;
+}
+.recom-bd  ul li img {
+	width: 248px;
+	height: 163px;
+}
+.recom-bd  ul li:nth-child(-n+3)::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 1px;
+	height: 145px;
+	background-color: #ddd;
+}
+/* -----楼层区域制作---- */
+.box_hd {
+	height: 30px;
+	border-bottom: 2px solid #c81623;
+}
+.box_hd h3 {
+	float: left;
+	font-size: 18px;
+	color: #c81623;
+	font-weight: 400;
+}
+.tab-list {
+	float: right;
+	line-height: 30px;
+}
+.tab-list ul li {
+	float: left;
+}
+.tab-list ul li a {
+	margin: 0 15px;
+}
+.floor .w {
+	margin-top: 30px;
+}
+.box_bd {
+	height: 361px;
+	/* background-color: pink; */
+}
+.tab-list-item>div {
+	float: left;
+	height: 361px;
+}
+.col_210 {
+	width: 210px;
+	background-color: #f9f9f9;
+	text-align: center;
+}
+.col_210 ul {
+	padding-left: 12px;
+}
+.col_210 ul li {
+	float: left;
+	width: 85px;
+	height: 34px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	line-height: 34px;
+	margin-right: 10px;
+}
+.col_329 {
+	width: 329px;
+}
+.col_221 {
+	width: 221px;
+	border-right: 1px solid #ccc;
+}
+.col_219 {
+	width: 219px;
+}
+.bb {
+	/* 一般情况下.a如果有包含有宽度的盒子,需要转换为块级元素 */
+	display: block;
+	border-bottom: 1px solid #ccc;
+}
